@@ -10,21 +10,21 @@ const AboutTuneItScotland = () => {
         <div className="space-y-6">
           {/* Label */}
           <div className="flex items-center gap-2">
-            <FaCarSide className="text-red-600 text-xl" />
-            <span className="text-red-600 font-semibold uppercase tracking-wide text-sm">
+            <FaCarSide className="text-[#004B93] text-xl" />
+            <span className="text-[#004B93] font-semibold uppercase tracking-wide text-sm">
               About Tune It Scotland
             </span>
           </div>
 
           {/* Headings */}
           <div>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-[#2B2B2B] leading-tight">
               Scotland’s Trusted Tuning & Performance Experts
             </h2>
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 leading-relaxed max-w-xl">
+          <p className="text-[#555] leading-relaxed max-w-xl">
             For decades, Tune It Scotland has been at the heart of the car scene — known for
             precision tuning, honest service, and a genuine passion for performance. We’ve built
             a strong reputation across Scotland by helping drivers unlock their car’s true potential.
@@ -33,13 +33,13 @@ const AboutTuneItScotland = () => {
           {/* Experience & Professional Block */}
           <div className="flex items-start gap-4 mt-6">
             <div className="flex-shrink-0">
-              <FaCogs className="text-red-600 text-3xl" />
+              <FaCogs className="text-[#004B93] text-3xl" />
             </div>
             <div>
-              <h4 className="font-semibold text-lg text-gray-900">
+              <h4 className="font-semibold text-lg text-[#2B2B2B]">
                 Experience & Professional
               </h4>
-              <p className="text-gray-600 text-sm mt-2">
+              <p className="text-[#555] text-sm mt-2">
                 With years of hands-on expertise and a love for all things automotive, our team
                 delivers reliable results every time. From diagnostics to remaps, we combine
                 skill, technology, and care to keep your vehicle running at its best.
@@ -48,7 +48,7 @@ const AboutTuneItScotland = () => {
           </div>
 
           {/* Get In Touch Button */}
-          <button className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold uppercase px-6 py-3 rounded-md mt-6 transition-all duration-300">
+          <button className="flex items-center gap-2 bg-[#004B93] hover:bg-[#00376C] text-white font-semibold uppercase px-6 py-3 rounded-md mt-6 transition-all duration-300">
             Get In Touch
             <FaArrowRight className="text-sm mt-[2px]" />
           </button>
@@ -63,8 +63,8 @@ const AboutTuneItScotland = () => {
               alt="Mechanic tuning car engine"
               className="rounded-lg shadow-xl w-[90%] md:w-[85%] object-cover"
             />
-            {/* Red Corner Accent */}
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-red-600 -z-10 clip-triangle"></div>
+            {/* Blue Corner Accent */}
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#004B93] -z-10 clip-triangle"></div>
           </div>
 
           {/* Overlapping Secondary Image */}

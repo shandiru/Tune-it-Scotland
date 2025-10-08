@@ -48,17 +48,20 @@ const testimonials = [
 
 const ReviewsSection = () => {
   return (
-    <section className="relative bg-gradient-to-b from-white to-gray-50 py-20 overflow-hidden" id="reviews">
+    <section
+      className="relative bg-gradient-to-b from-white to-gray-50 py-20 overflow-hidden"
+      id="reviews"
+    >
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         {/* Section Heading */}
         <div className="mb-14">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#2B2B2B]">
             What Our Customers Say
           </h2>
-          <p className="text-gray-600 mt-3 text-lg">
+          <p className="text-[#555] mt-3 text-lg">
             Trusted by performance enthusiasts across Scotland.
           </p>
-          <div className="mt-4 w-24 h-[3px] bg-red-600 mx-auto rounded-full"></div>
+          <div className="mt-4 w-24 h-[3px] bg-[#004B93] mx-auto rounded-full"></div>
         </div>
 
         {/* Swiper Testimonials */}
@@ -79,8 +82,8 @@ const ReviewsSection = () => {
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
               <div
-                className={`bg-white rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-red-600 transition-all duration-500 transform hover:-translate-y-2 ${
-                  index === 2 ? 'scale-105 shadow-red-100' : ''
+                className={`bg-white rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-[#004B93] transition-all duration-500 transform hover:-translate-y-2 ${
+                  index === 2 ? 'scale-105 shadow-blue-100' : ''
                 }`}
               >
                 {/* Card Content */}
@@ -89,12 +92,12 @@ const ReviewsSection = () => {
                   <img
                     src={t.image}
                     alt={t.name}
-                    className="w-20 h-20 rounded-full object-cover border-4 border-red-600 mb-4"
+                    className="w-20 h-20 rounded-full object-cover border-4 border-[#004B93] mb-4"
                   />
 
                   {/* Name */}
-                  <h4 className="text-lg font-bold text-gray-900">{t.name}</h4>
-                  <span className="text-sm text-red-600 font-medium mb-3">
+                  <h4 className="text-lg font-bold text-[#2B2B2B]">{t.name}</h4>
+                  <span className="text-sm text-[#004B93] font-medium mb-3">
                     {t.role}
                   </span>
 
@@ -106,7 +109,7 @@ const ReviewsSection = () => {
                   </div>
 
                   {/* Review Text */}
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-[#555] text-sm leading-relaxed">
                     “{t.review}”
                   </p>
                 </div>
@@ -116,9 +119,9 @@ const ReviewsSection = () => {
         </Swiper>
       </div>
 
-      {/* Decorative Red Glow */}
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-red-500/10 blur-[120px] rounded-full -z-10"></div>
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-red-600/10 blur-[120px] rounded-full -z-10"></div>
+      {/* Decorative Blue Glow */}
+      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#004B93]/10 blur-[120px] rounded-full -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#004B93]/10 blur-[120px] rounded-full -z-10"></div>
     </section>
   );
 };

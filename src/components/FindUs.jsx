@@ -4,21 +4,22 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const FindUs = () => {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-20" id="contact">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
         <div className="flex flex-col items-center mb-10">
-          <FaMapMarkerAlt className="text-red-600 text-4xl mb-3" />
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">
+          <FaMapMarkerAlt className="text-[#004B93] text-4xl mb-3" />
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#2B2B2B]">
             Find Us
           </h2>
-          <p className="text-gray-700 mt-3 text-lg max-w-2xl">
+          <p className="text-[#555] mt-3 text-lg max-w-2xl">
             Tune-it Scotland, Unit B8, 15 Carmyle Ave, Glasgow G32 8HL, United Kingdom
           </p>
+          <div className="mt-4 w-24 h-[3px] bg-[#004B93] rounded-full"></div>
         </div>
 
         {/* Google Map */}
-        <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+        <div className="rounded-xl overflow-hidden shadow-lg border border-[#d9e2ec]">
           <iframe
             title="Tune-it Scotland Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89412.54126573337!2d-4.2427321!3d55.8405334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48886bebbb590ac5%3A0x3e1fefe261cd55b0!2sUnit%20B8%2C%2015%20Carmyle%20Ave%2C%20Glasgow%20G32%208HL%2C%20United%20Kingdom!5e0!3m2!1sen!2slk!4v1696867764563!5m2!1sen!2slk"

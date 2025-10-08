@@ -14,43 +14,43 @@ const services = [
   {
     id: 1,
     title: 'Diagnostics',
-    icon: <FaTachometerAlt className="text-red-600 text-3xl relative z-10" />,
+    icon: <FaTachometerAlt className="text-[#004B93] text-3xl relative z-10" />,
     image: '/images/diagnostics.jpg',
   },
   {
     id: 2,
     title: 'Servicing & Repairs',
-    icon: <FaTools className="text-red-600 text-3xl relative z-10" />,
+    icon: <FaTools className="text-[#004B93] text-3xl relative z-10" />,
     image: '/images/servicing.jpg',
   },
   {
     id: 3,
     title: 'Key Cutting & Programming',
-    icon: <FaKey className="text-red-600 text-3xl relative z-10" />,
+    icon: <FaKey className="text-[#004B93] text-3xl relative z-10" />,
     image: '/images/key-cutting.jpg',
   },
   {
     id: 4,
     title: 'Stage 1, DPF, Adblue & EGR',
-    icon: <FaCogs className="text-red-600 text-3xl relative z-10" />,
+    icon: <FaCogs className="text-[#004B93] text-3xl relative z-10" />,
     image: '/images/stage1.jpg',
   },
   {
     id: 5,
     title: 'OBD Tuning',
-    icon: <FaPlug className="text-red-600 text-3xl relative z-10" />,
+    icon: <FaPlug className="text-[#004B93] text-3xl relative z-10" />,
     image: '/images/obd-tuning.jpg',
   },
   {
     id: 6,
     title: 'Bench Tuning',
-    icon: <FaCarBattery className="text-red-600 text-3xl relative z-10" />,
+    icon: <FaCarBattery className="text-[#004B93] text-3xl relative z-10" />,
     image: '/images/bench-tuning.jpg',
   },
   {
     id: 7,
     title: 'Carbon Cleaning',
-    icon: <FaFan className="text-red-600 text-3xl relative z-10" />,
+    icon: <FaFan className="text-[#004B93] text-3xl relative z-10" />,
     image: '/images/carbon-cleaning.jpg',
   },
 ];
@@ -60,13 +60,13 @@ const ServicesSection = () => {
     <section className="bg-white py-16 md:py-24" id="services">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Top Section */}
-        <h5 className="text-red-600 uppercase tracking-wide font-semibold text-sm">
+        <h5 className="text-[#004B93] uppercase tracking-wide font-semibold text-sm">
           Services
         </h5>
-        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mt-2">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-[#2B2B2B] mt-2">
           What We Do
         </h2>
-        <p className="text-2xl md:text-3xl font-light text-gray-700 mt-3">
+        <p className="text-2xl md:text-3xl font-light text-[#555] mt-3">
           We Provide Professional Vehicle <br /> Tuning & Performance Services
         </p>
 
@@ -96,7 +96,7 @@ const ServicesSection = () => {
                 {/* Icon & Title */}
                 <div className="relative flex flex-col items-center space-y-3">
                   {service.icon}
-                  <h4 className="text-lg font-semibold text-gray-900">
+                  <h4 className="text-lg font-semibold text-[#2B2B2B]">
                     {service.title}
                   </h4>
                 </div>

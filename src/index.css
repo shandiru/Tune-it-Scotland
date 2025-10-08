@@ -12,3 +12,11 @@ html, body {
 .clip-triangle {
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
+.swiper-pagination-bullet {
+  background-color: #004B93 !important;
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  background-color: #004B93 !important;
+  opacity: 1 !important;
+}
