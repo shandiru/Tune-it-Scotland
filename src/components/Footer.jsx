@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-3 mt-5">
             <a
-              href="#"
+              href="https://www.facebook.com/TuneItScotland/"
               className="p-2 bg-[#004B93] hover:bg-[#00376C] rounded-full text-white transition"
               aria-label="Facebook"
             >
