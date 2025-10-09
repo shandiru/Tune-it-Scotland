@@ -12,24 +12,36 @@ import 'swiper/css/pagination';
 
 const galleryItems = [
   {
-    img: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80',
-    caption: 'Remap Session',
+    img: 'Audi A4 2.0tdi.jpeg',
+    caption: 'Audi A4 2.0tdi',
   },
   {
-    img: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80',
-    caption: 'Performance Upgrade',
+    img: 'Audi RS4.jpeg',
+    caption: 'Audi RS4',
   },
   {
-    img: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=80',
-    caption: 'Dyno Test',
+    img: 'Audi SQ5 3.0tfsi.jpeg',
+    caption: 'Audi SQ5 3.0tfsi',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80',
-    caption: 'Carbon Cleaning',
+    img: 'Audi SQ7 4.0tdi V8.jpeg',
+    caption: 'Audi SQ7 4.0tdi V8',
   },
   {
-    img: 'https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?auto=format&fit=crop&w=800&q=80',
-    caption: 'Engine Detailing',
+    img: 'Audi SQ7.jpeg',
+    caption: 'Audi SQ7',
+  },
+  {
+    img: 'BMW X6 3.0d.jpeg',
+    caption: 'BMW X6 3.0d',
+  },
+  {
+    img: 'Honda Civic.jpeg',
+    caption: 'Honda Civic',
+  },
+  {
+    img: 'Vauxhall Astra 1.4t.jpeg',
+    caption: 'Vauxhall Astra 1.4t',
   },
 ];
 
