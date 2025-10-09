@@ -10,6 +10,7 @@ import WhyChooseUs from "../src/components/WhyChooseUs"
 import Footer from "../src/components/Footer"
 import FindUs from "../src/components/FindUs"
 import GallerySlider from "../src/components/GallerySlider"
+import ContactSection from "../src/components/ContactSection"
 function App() {
   return (
     <>
@@ -20,7 +21,8 @@ function App() {
       <WhyChooseUs />
       <GallerySlider />
       <ReviewsSection />
-      <FindUs />
+      <ContactSection />
+      {/* <FindUs /> */}
       < Footer />
     </>
   );
