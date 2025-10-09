@@ -167,7 +167,7 @@ const Navbar = () => {
             className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5a] text-white font-bold text-sm uppercase px-5 py-2 rounded-sm transition shadow-md hover:shadow-xl"
           >
             <FaWhatsapp className="text-lg" />
-            WhatsApps
+            WhatsApp
           </a>
         </div>
       )}
