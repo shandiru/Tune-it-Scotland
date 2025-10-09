@@ -12,39 +12,39 @@ import 'swiper/css/pagination';
 // ✅ Sample testimonial data (replace with real customer reviews)
 const testimonials = [
   {
-    name: 'James McLeod',
-    role: 'Remap Client',
+    name: 'Dylan Sherman',
+   
     image: 'https://randomuser.me/api/portraits/men/32.jpg',
     review:
-      "Absolutely brilliant service. My car feels completely transformed — smoother, faster, and more responsive. Highly recommend Tune-it Scotland!",
+      "Had an issue with my NC MX-5 ECU. I managed to corrupt and lock the ECU and my car wouldn't turn over. Called Daryn, he was very informative easy to work with and solved my issue very quickly. Good guy and good at what he dose. Highly recommend",
   },
   {
-    name: 'Laura Hamilton',
-    role: 'Carbon Cleaning Customer',
+    name: 'Sean',
+   
     image: 'https://randomuser.me/api/portraits/women/45.jpg',
     review:
-      "Friendly team, honest advice, and real results. The difference after my carbon clean was incredible. I’ll definitely be back!",
+      "Just got my mini tuned what a difference with mph torque etc very responsive instant power absolutely brilliant service would highly recommend to anyone looking for there car to be tuned.",
   },
   {
-    name: 'Connor Stewart',
-    role: 'Performance Upgrade Client',
+    name: 'Rob Murkowski',
+  
     image: 'https://randomuser.me/api/portraits/men/75.jpg',
     review:
-      "Professional and passionate about what they do. My ECU remap was done quickly, and the power gains were amazing!",
+      "Great service from Tune-it Scotland! Had my Renault trafic sport 3 mapped and what a difference its made! The pull and extra mpg has made such a difference. Thanks again 💪👌🏴󠁧󠁢󠁳󠁣󠁴󠁿",
   },
   {
-    name: 'Rachel Gray',
-    role: 'Diagnostics Customer',
+    name: 'Bill Stewart',
+   
     image: 'https://randomuser.me/api/portraits/women/62.jpg',
     review:
-      "They took the time to explain everything clearly. It’s rare to find such honest, expert service — thank you Tune-it Scotland!",
+      "Done a great job my van is more driveable now",
   },
   {
-    name: 'Ewan MacDonald',
-    role: 'Stage 1 Tuning Client',
+    name: 'David Boyce',
+   
     image: 'https://randomuser.me/api/portraits/men/90.jpg',
     review:
-      "Stage 1 tune exceeded my expectations. The car’s throttle response and torque are perfect now. Highly recommended!",
+      "Very nice guy and honest lol What a difference he has made to the car I would recommend him to anybody thinking about upgrading there car",
   },
 ];
 
@@ -112,9 +112,7 @@ const ReviewsSection = () => {
                     <h4 className="text-lg font-bold text-[#2B2B2B] dark:text-white">
                       {t.name}
                     </h4>
-                    <span className="text-sm text-[#004B93] dark:text-[#66A8FF] font-medium mb-3">
-                      {t.role}
-                    </span>
+                   
 
                     {/* Stars */}
                     <div className="flex justify-center mb-3">
