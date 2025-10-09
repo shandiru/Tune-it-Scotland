@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 import ThemeToggle from '../components/ThemeToggle'; // ✅ import your toggle
 
 const Navbar = () => {
@@ -60,12 +61,15 @@ const Navbar = () => {
           {/* Theme Toggle */}
           <ThemeToggle />
 
-          {/* Desktop CTA */}
+          {/* ✅ Desktop WhatsApp Button */}
           <a
-            href="#book"
-            className="hidden lg:inline-block bg-[#004B93] hover:bg-[#00376C] text-white font-bold text-sm uppercase px-5 py-2 rounded-sm transition"
+            href="https://wa.me/447909445101"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5a] text-white font-bold text-sm uppercase px-5 py-2 rounded-sm transition shadow-md hover:shadow-xl"
           >
-            Book Now
+            <FaWhatsapp className="text-lg" />
+            WhatsApp
           </a>
 
           {/* Mobile Menu Toggle */}
@@ -154,13 +158,16 @@ const Navbar = () => {
             Contact
           </a>
 
-          {/* Mobile CTA */}
+          {/* ✅ Mobile WhatsApp Button */}
           <a
-            href="#book"
+            href="https://wa.me/447909445101"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
-            className="inline-block mt-3 bg-[#004B93] hover:bg-[#00376C] text-white font-bold text-sm uppercase px-5 py-2 rounded-sm transition"
+            className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5a] text-white font-bold text-sm uppercase px-5 py-2 rounded-sm transition shadow-md hover:shadow-xl"
           >
-            Book Now
+            <FaWhatsapp className="text-lg" />
+            WhatsApp
           </a>
         </div>
       )}
