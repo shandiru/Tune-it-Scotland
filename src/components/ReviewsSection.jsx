@@ -34,6 +34,26 @@ const testimonials = [
     review:
       "Very honest and professional! What a difference he made to the car. I’d recommend him to anyone upgrading their vehicle.",
   },
+  {
+    name: 'Thomas McGuire',
+    review:
+      "Hello just wanted to thank you for mapping my kodiaq what a difference it's made over the moon with the car now and there is also a noticeable difference to the fuel mileage as well ( when I behave 😂) Thanks again buddy I'll definitely be telling people to contact you.",
+  },
+   {
+    name: 'Andrew Collins',
+    review:
+      "Remapped Stage 1 my Rangerover sport TDV8 3.6 excellent power increase and a smooth acceleration Cheers mate.",
+  },
+  {
+    name: 'Liam Christie',
+    review:
+      "Great service, van running much smoother, more nippy and better fuel economy.Thanks again.",
+  },
+   {
+    name: 'Richie Milligan',
+    review:
+      "Daryn came out and remapped a Ranger and a Hilux, very happy with the results on both. I would highly Recommend.",
+  },
 ];
 
 const ReviewsSection = () => {
