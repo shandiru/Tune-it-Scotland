@@ -1,12 +1,21 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // animation runs once per scroll
+      offset: 100, // offset (in px) from the original trigger point
+    });
+  }, []);
+
   return (
     <main className="relative h-screen w-full flex flex-col justify-center items-center text-center text-white overflow-hidden">
-      {/* Background (video or image overlay) */}
+      {/* Background */}
       <div className="absolute inset-0">
-        {/* Example: if you have a video background, replace below img with <video> */}
         <img
           src="/hero-car.png"
           alt="Car detailing hero"
@@ -16,17 +25,32 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center px-4">
-        <h1 className="text-3xl md:text-6xl font-extrabold uppercase tracking-wide">
+      <div
+        className="relative z-10 flex flex-col items-center justify-center px-4"
+        data-aos="fade-up"
+      >
+        <h1
+          className="text-3xl md:text-6xl font-extrabold uppercase tracking-wide"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           Car Detailing, Shop & Repair
         </h1>
-        <p className="text-2xl md:text-4xl font-bold text-gray-300 mt-3 tracking-wider">
+        <p
+          className="text-2xl md:text-4xl font-bold text-gray-300 mt-3 tracking-wider"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           WordPress Theme
         </p>
       </div>
 
       {/* Scroll Down */}
-      <div className="absolute bottom-10 flex flex-col items-center space-y-2 z-10">
+      <div
+        className="absolute bottom-10 flex flex-col items-center space-y-2 z-10"
+        data-aos="fade-up"
+        data-aos-delay="600"
+      >
         <span className="text-xs uppercase font-semibold tracking-widest">Scroll Down</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

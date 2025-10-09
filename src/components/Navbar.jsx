@@ -1,23 +1,40 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import ThemeToggle from '../components/ThemeToggle'; // ✅ import your toggle
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Optional: change navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-[#2B2B2B]/80 to-transparent backdrop-blur-sm">
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-[#2B2B2B]/90 backdrop-blur-md shadow-md'
+          : 'bg-gradient-to-b from-[#2B2B2B]/80 to-transparent backdrop-blur-sm'
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <a href="#home" className="flex items-center">
           <img
             src="logo-removebg-preview.png"
             alt="Tune-It Scotland Logo"
-            className="w-auto h-12 object-contain "
+            className="w-auto h-12 object-contain"
           />
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-white font-semibold text-sm uppercase tracking-wide">
+        <nav className="hidden md:flex items-center gap-8 font-semibold text-sm uppercase tracking-wide text-white dark:text-gray-200">
           <a href="#home" className="hover:text-[#004B93] transition">Home</a>
           <a href="#about" className="hover:text-[#004B93] transition">About</a>
           <a href="#services" className="hover:text-[#004B93] transition">Services</a>
@@ -26,56 +43,62 @@ const Navbar = () => {
           <a href="#contact" className="hover:text-[#004B93] transition">Contact</a>
         </nav>
 
-        {/* Desktop CTA */}
-        <a
-          href="#book"
-          className="hidden md:inline-block bg-[#004B93] hover:bg-[#00376C] text-white font-bold text-sm uppercase px-5 py-2 rounded-sm transition"
-        >
-          Book Now
-        </a>
+        {/* Right-side buttons */}
+        <div className="flex items-center gap-3">
+          {/* Dark/Light Toggle */}
+          <ThemeToggle />
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
+          {/* Desktop CTA */}
+          <a
+            href="#book"
+            className="hidden md:inline-block bg-[#004B93] hover:bg-[#00376C] text-white font-bold text-sm uppercase px-5 py-2 rounded-sm transition"
+          >
+            Book Now
+          </a>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden text-white dark:text-gray-200 focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-[#2B2B2B]/95 text-white text-center py-6 space-y-5 font-semibold uppercase tracking-wide transition-all duration-300">
+        <div className="md:hidden bg-[#2B2B2B]/95 dark:bg-neutral-900 text-white dark:text-gray-200 text-center py-6 space-y-5 font-semibold uppercase tracking-wide transition-all duration-300">
           <a href="#home" onClick={() => setIsOpen(false)} className="block hover:text-[#004B93]">Home</a>
           <a href="#about" onClick={() => setIsOpen(false)} className="block hover:text-[#004B93]">About</a>
           <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-[#004B93]">Services</a>
